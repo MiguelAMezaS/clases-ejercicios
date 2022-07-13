@@ -1,14 +1,4 @@
-"""Al mismo tiempo hay una serie de reglas de facturación:
-
-* Los días miércoles todos los alquileres tienen una bonificación de 50 pesos.
-
-* Si quien alquila es una empresa (cuit empieza con 26) tiene un descuento del 5% como 
-parte de la política de fidelización de clientes
-
-* Si el auto es devuelto luego de finalizado el tiempo establecido al momento de alquiler, 
-se cobra un recargo del 100%.
-"""
-#ejercicio de POO
+#ejercicio de POO, rental car
 
 class Alquiler:
     def __init__(self, tipo, cuit, horas, dias = 0, kilometros = 0, miercoles = 0):
@@ -56,7 +46,7 @@ class Alquiler:
         self.total = (self.precio + self.recargo) - (self.bonificacion + self.descuento)
 
 
-aa = Alquiler('Horas', '20345534342', 5)
+aa = Alquiler('Horas', '20345534342', 5) #probando cada función
 print(aa)
 
 print()
